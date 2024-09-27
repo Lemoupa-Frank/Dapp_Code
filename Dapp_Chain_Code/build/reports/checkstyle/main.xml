@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.21">
+<file name="/home/frank/IdeaProjects/Dapp_Chain_Code/src/main/java/org/hyperledger/fabric/samples/assettransfer/ContractElection.java">
+<error line="60" column="12" severity="error" message="More than 7 parameters (found 8)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="60" column="29" severity="error" message="Parameter Candidates should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="60" column="53" severity="error" message="Parameter election_Name should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="60" column="75" severity="error" message="Parameter election_Describtion should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="60" column="104" severity="error" message="Parameter election_ID should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="60" column="124" severity="error" message="Parameter pool_Type should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="60" column="143" severity="error" message="Parameter ownerID should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="60" column="159" severity="error" message="Parameter election_Expiration should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="60" column="185" severity="error" message="Parameter election_Start should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="/home/frank/IdeaProjects/Dapp_Chain_Code/src/main/java/org/hyperledger/fabric/samples/assettransfer/Candidate.java">
+<error line="25" column="22" severity="error" message="Parameter candidateID should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="25" column="42" severity="error" message="Parameter organisationID should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="25" column="65" severity="error" message="Parameter votes should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="25" column="76" severity="error" message="Parameter image should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="49" column="27" severity="error" message="Parameter o should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="50" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="51" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+</file>
+<file name="/home/frank/IdeaProjects/Dapp_Chain_Code/src/main/java/org/hyperledger/fabric/samples/assettransfer/Vote.java">
+<error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="7" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - org.hyperledger.fabric.contract.annotation.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="54" column="29" severity="error" message="More than 7 parameters (found 9)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="54" column="63" severity="error" message="Parameter Candidates should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="54" column="87" severity="error" message="Parameter election_Name should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="55" column="44" severity="error" message="Parameter election_Describtion should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="55" column="73" severity="error" message="Parameter election_ID should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="55" column="93" severity="error" message="Parameter pool_Type should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="55" column="112" severity="error" message="Parameter ownerID should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="55" column="128" severity="error" message="Parameter election_Expiration should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="55" column="154" severity="error" message="Parameter election_Start should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="64" column="26" severity="error" message="Name &apos;_contractElection&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+</file>
+</checkstyle>
