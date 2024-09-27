@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="Widget.Theme.Cammeet.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/primary_blue</item>
+        <!--<item name="android:autofilledHighlight">@android:color/transparent</item>-->
+    </style>
+
+    <style name="Widget.Theme.Cammeet.ButtonBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/primary_blue</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+</resources>

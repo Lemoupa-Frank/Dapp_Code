@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_blue"
+    tools:context=".fabric_gateway.activity.login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="@color/primary_blue"
+        app:layout_constraintBottom_toTopOf="@+id/cl2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/transperency"
+            android:src="@drawable/transparency"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="ImageContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl2"
+        android:layout_width="280dp"
+        android:layout_height="310dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/cl3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl1">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+             android:id="@+id/dots_indicator"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginTop="15dp"
+             app:dotsColor="@color/white"
+             app:dotsCornerRadius="8dp"
+             app:dotsSize="13dp"
+             app:dotsSpacing="4dp"
+             app:dotsStrokeColor="@color/grey"
+             app:dotsStrokeWidth="8dp"
+             app:dotsWidthFactor="2.5"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/cardview"
+             app:progressMode="true" /> -->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl3"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_40_upper_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:foregroundGravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout1"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/TextInputLayout2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/otp_edit_text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_45_square"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:cursorVisible = "false"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout2"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:layout_constraintLeft_toRightOf="@+id/TextInputLayout1"
+                app:layout_constraintRight_toLeftOf="@+id/TextInputLayout3"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/otp_edit_text_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_45_square"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:importantForAutofill="no"
+                    android:cursorVisible = "false"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="24sp"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout3"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:layout_constraintLeft_toRightOf="@+id/TextInputLayout2"
+                app:layout_constraintRight_toLeftOf="@+id/TextInputLayout4"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/otp_edit_text_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_45_square"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:cursorVisible = "false"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="24sp"
+                    tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout4"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:layout_constraintLeft_toRightOf="@+id/TextInputLayout3"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/otp_edit_text_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_45_square"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:cursorVisible = "false"
+                    android:maxLength="1"
+                    android:textSize="24sp"
+                    tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="39dp"
+            android:layout_marginStart="58dp"
+            android:foregroundGravity="center"
+            android:background="?attr/selectableItemBackground"            app:cardCornerRadius="13dp"
+            app:cardElevation="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.47"
+            app:strokeColor="@color/prime_blue"
+            app:strokeWidth="0.5dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"                android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/prime_blue"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="3dp"
+                android:text="@string/login"
+                android:textColor="@color/prime_blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

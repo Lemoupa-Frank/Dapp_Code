@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp"
+tools:context=".fabric_gateway.activity.AboutActivity">
+
+<TextView
+    android:id="@+id/tv_about_title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="About Blockchain Voting System"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/tv_about_description"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="This application is a secure and transparent voting system built on Hyperledger Fabric, leveraging blockchain technology to ensure the integrity and confidentiality of votes."
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@id/tv_about_title"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="8dp"/>
+
+<TextView
+    android:id="@+id/tv_features_title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Key Features"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/tv_about_description"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"/>
+
+<TextView
+    android:id="@+id/tv_features_content"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="• Secure and immutable voting records\n• Transparent vote tallying\n• Voter anonymity\n• Easy to use interface\n• Real-time results"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@id/tv_features_title"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="8dp"/>
+
+<TextView
+    android:id="@+id/tv_technologies_title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Technologies Used"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/tv_features_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"/>
+
+<TextView
+    android:id="@+id/tv_technologies_content"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="• Hyperledger Fabric\n• Android\n• Kotlin/Java\n• Retrofit\n• ConstraintLayout"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@id/tv_technologies_title"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="8dp"/>
+
+<TextView
+    android:id="@+id/tv_contact_title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Contact Information"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/tv_technologies_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"/>
+
+<TextView
+    android:id="@+id/tv_contact_content"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="For more information or support, please contact:\nEmail: support@blockchainvoting.com\nPhone: +1 234 567 890"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@id/tv_contact_title"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
